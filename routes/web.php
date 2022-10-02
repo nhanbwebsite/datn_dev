@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/version', function () {
-    return ['Laravel' => app()->version()];
+    return ['Laravel' => app()->version(), 'PHP' => phpversion()];
 });
 
 require __DIR__.'/auth.php';
